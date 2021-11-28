@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [regression]" guice-stage="DEVELOPMENT">
+  <parameter name="url" value="https://www.facebook.com"/>
+  <listeners>
+    <listener class-name="commoncode.baseclass"/>
+  </listeners>
+  <test thread-count="5" name="test1(failed)">
+    <parameter name="brow" value="chrome"/>
+    <classes>
+      <class name="regressiontests.NewTest">
+        <methods>
+          <include name="browser"/>
+          <include name="f"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- regressiontests.NewTest -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [regression] -->

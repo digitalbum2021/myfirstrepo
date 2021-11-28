@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="regression">
+	<parameter name="url" value="https://www.facebook.com"></parameter>
+
+
+	<listeners>
+		<listener class-name="commoncode.baseclass"></listener>
+	</listeners>
+
+	<test name="test1">
+		<!-- this is passing the value -->
+		<parameter name="brow" value="chrome"></parameter>
+
+
+		<classes>
+			<!-- <class name="regressiontests.Test_A"></class> <class name="regressiontests.Test_B_DP"></class> -->
+
+			<class name="regressiontests.Test_C_Properties"></class>
+		</classes>
+	</test>
+</suite>
